@@ -5,18 +5,23 @@ body {
 }
 
 .center {
+ background-color: lightpink;
     text-align: center;
 }
 
 .text-big {
+     text-align: center;
     font-size: 300%;
+background-color: lightblue;
 }
 
 .bold {
+
     font-weight: bold;
 }
 
 .img-medium {
+
     height: 200px;
 }
 
