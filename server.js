@@ -18,7 +18,7 @@ content:`<p>
     </p>`
 
 };
-var articltwo={
+var articletwo={
 title:'article-2|Parul Sahi',
 heading:'GLOBAL WARMING',
 content:`<p>
