@@ -5,6 +5,57 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+
+var articleone=
+{
+   title:'article-1|Parul Sahi',
+   heading:GST,
+   content:`<p>
+            Goods and Services Tax (GST) is an indirect tax which was introduced in India on 1 July 2017 and was applicable throughout India which replaced multiple cascading taxes levied by the central and state governments. It was introduced as The Constitution (One Hundred and First Amendment) Act 2017, following the passage of Constitution 122nd Amendment Bill. The GST is governed by a GST Council and its Chairman is the Finance Minister of India.
+            </p>
+            <p>Under GST, goods and services are taxed at the following rates, 0, 5%, 12% ,18% and 28%. There is a special rate of 0.25% on rough precious and semi-precious stones and 3% on gold. In addition a cess of 15% or other rates on top of 28% GST applies on few items like aerated drinks, luxury cars and tobacco products. 
+            </p>
+            <p>GST was initially proposed to replace a slew of indirect taxes with a unified tax and was therefore set to dramatically reshape the country's 2 trillion dollar economy. The rate of GST in India is between double to four times that levied in other countries like Singapore.
+            </p>`
+    
+};
+
+function createTemplate(data)
+{
+    var title=data.title;
+    var heading=data.heading;
+    var content=data.content;
+var htmlTemplate=
+`
+    <html>
+<head>
+<title>${title}
+</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+ <link href="/ui/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+    <div>
+        <a href="/">home</a>
+    </div>
+    <hr/>
+    <div>
+        <h3>
+           ${heading}
+        </h3>
+    </div>
+    <div>
+        ${content}
+    </div>
+    </div>
+</body>
+</html>
+`
+}
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
