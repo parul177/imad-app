@@ -43,11 +43,11 @@ submit.onclick=function()
      list+='<li>'+names[i]+'</li>';
      
  }
-        }
+        
  var ul=document.getElementById('namelist');
  ul.innerHTML=list;
 }
-};
+}};
      request.open('GET','http://pscancer177.imad.hasura-app.io/submitname?name=',+name,true);
     request.send(null);
 };
