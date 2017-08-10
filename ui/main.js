@@ -3,7 +3,7 @@ var button=document.getElementById('counter');
 button.onclick=function()
 {
     //create req object
-    var request=new XMLHttpRequest();
+    var request = new XMLHttpRequest();
     //capture the response & store it in a variable
     request.onreadystatechange=function(){
     if(request.readyState===XMLHttpRequest.DONE)
@@ -51,7 +51,7 @@ submit.onclick=function()
     };
     var nameInput=document.getElementById('name');
 var name=nameInput.value;
-     request.open('GET','http://pscancer177.imad.hasura-app.io/submitname?name=',+name,true);
+     request.open('GET','http://pscancer177.imad.hasura-app.io/submitname?name=' +name,true);
     request.send(null);
 };
 
