@@ -21,8 +21,7 @@ button.onclick=function()
     request.open('GET','http://pscancer177.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-var nameInput=document.getElementById('name');
-var name=nameInput.value;
+
 var submit=document.getElementById('submit_btn');
 submit.onclick=function()
 {
@@ -47,7 +46,11 @@ submit.onclick=function()
  var ul=document.getElementById('namelist');
  ul.innerHTML=list;
 }
-}};
+}
+        
+    };
+    var nameInput=document.getElementById('name');
+var name=nameInput.value;
      request.open('GET','http://pscancer177.imad.hasura-app.io/submitname?name=',+name,true);
     request.send(null);
 };
