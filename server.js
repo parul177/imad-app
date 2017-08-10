@@ -126,7 +126,7 @@ app.get('/submitname', function (req, res) {
     names.push(name);
     //JSON
     res.send(JSON.stringify(names));
-  res.send(createTemplate(articlethree));
+  
 });
 
 
