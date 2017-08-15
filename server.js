@@ -20,6 +20,7 @@ var articles={
 'articleone':{
 title:'article-1|Parul Sahi',
 heading:'GST',
+ date: '25 October 2017',
 content:`<p>
     Goods and Services Tax (GST) is an indirect tax which was introduced in India on 1 July 2017 and was applicable throughout India which replaced multiple cascading taxes levied by the central and state governments. It was introduced as The Constitution (One Hundred and First Amendment) Act 2017, following the passage of Constitution 122nd Amendment Bill. The GST is governed by a GST Council and its Chairman is the Finance Minister of India.
     </p>
@@ -32,6 +33,7 @@ content:`<p>
 'articletwo':{
 title:'article-2|Parul Sahi',
 heading:'GLOBAL WARMING',
+ date: '25 October 2016',
 content:`<p>
     Goods and Services Tax (GST) is an indirect tax which was introduced in India on 1 July 2017 and was applicable throughout India which replaced multiple cascading taxes levied by the central and state governments. It was introduced as The Constitution (One Hundred and First Amendment) Act 2017, following the passage of Constitution 122nd Amendment Bill. The GST is governed by a GST Council and its Chairman is the Finance Minister of India.
     </p>
@@ -44,6 +46,7 @@ content:`<p>
 'articlethree':{
 title:'article-3|Parul Sahi',
 heading:'GST',
+ date: '25 October 2015',
 content:`<p>
     Global warming, also referred to as climate change, is the observed century-scale rise in the average temperature of the Earth's climate system and its related effects. Multiple lines of scientific evidence show that the climate system is warming. Many of the observed changes since the 1950s are unprecedented in the instrumental temperature record which extends back to the mid-19th century, and in paleoclimate proxy records covering thousands of years.
     </p>
