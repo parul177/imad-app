@@ -17,7 +17,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-'article-1':{
+'articleone':{
 title:'article-1|Parul Sahi',
 heading:'GST',
 content:`<p>
@@ -29,7 +29,7 @@ content:`<p>
     </p>`
 
 },
-'article-2':{
+'articletwo':{
 title:'article-2|Parul Sahi',
 heading:'GLOBAL WARMING',
 content:`<p>
@@ -41,7 +41,7 @@ content:`<p>
     </p>`
 
 },
-'article-3':{
+'articlethree':{
 title:'article-3|Parul Sahi',
 heading:'GST',
 content:`<p>
