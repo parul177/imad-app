@@ -16,8 +16,8 @@ password: process.env.DB_PASSWORD
 var app = express();
 app.use(morgan('combined'));
 
-
-var articleone={
+var articles={
+'article-one':{
 title:'article-1|Parul Sahi',
 heading:'GST',
 content:`<p>
@@ -28,8 +28,8 @@ content:`<p>
     <p>GST was initially proposed to replace a slew of indirect taxes with a unified tax and was therefore set to dramatically reshape the country's 2 trillion dollar economy. The rate of GST in India is between double to four times that levied in other countries like Singapore.
     </p>`
 
-};
-var articletwo={
+},
+'article-two':{
 title:'article-2|Parul Sahi',
 heading:'GLOBAL WARMING',
 content:`<p>
@@ -40,8 +40,8 @@ content:`<p>
     <p>GST was initially proposed to replace a slew of indirect taxes with a unified tax and was therefore set to dramatically reshape the country's 2 trillion dollar economy. The rate of GST in India is between double to four times that levied in other countries like Singapore.
     </p>`
 
-};
-var articlethree={
+},
+'article-three':{
 title:'article-3|Parul Sahi',
 heading:'GST',
 content:`<p>
@@ -52,8 +52,8 @@ content:`<p>
     <p>Climate model projections summarized in the report indicated that during the 21st century, the global surface temperature is likely to rise a further 0.3 to 1.7 °C (0.5 to 3.1 °F) in the lowest emissions scenario, and 2.6 to 4.8 °C (4.7 to 8.6 °F) in the highest emissions scenario. These findings have been recognized by the national science academies of the major industrialized nations and are not disputed by any scientific body of national or international standing.
     </p>`
 
+}
 };
-
 
 
 
@@ -130,7 +130,7 @@ app.get('/article-3', function (req, res) {
 
 
 
-app.get('/articletable/:articleName',function(req,res)
+app.get('/articles/:articleName',function(req,res)
 {
     var name=req.params.articleName;
    //pool.query("SELECT * FROM articles WHERE title='"+req.params.articleName+ "'",function(err,result)
