@@ -103,7 +103,7 @@ var pool=new Pool(config);
 
 app.get('/test_db', function (req, res) 
 {
-pool.query('SELECT * FROM test',function(err,result)
+pool.query('SELECT * FROM ARTILE',function(err,result)
   {
   if(err)
       {
