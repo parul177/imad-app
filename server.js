@@ -64,6 +64,7 @@ function createTemplate(data)
 {
     var title=data.title;
     var heading=data.heading;
+    var date=data.date;
     var content=data.content;
 var htmlTemplate=
 `
@@ -83,6 +84,7 @@ var htmlTemplate=
     <div>
         <h3>
            ${heading}
+           ${date}
         </h3>
     </div>
     <div>
