@@ -17,7 +17,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-'article-one':{
+'article-1':{
 title:'article-1|Parul Sahi',
 heading:'GST',
 content:`<p>
@@ -29,7 +29,7 @@ content:`<p>
     </p>`
 
 },
-'article-two':{
+'article-2':{
 title:'article-2|Parul Sahi',
 heading:'GLOBAL WARMING',
 content:`<p>
@@ -41,7 +41,7 @@ content:`<p>
     </p>`
 
 },
-'article-three':{
+'article-3':{
 title:'article-3|Parul Sahi',
 heading:'GST',
 content:`<p>
@@ -129,6 +129,12 @@ app.get('/article-3', function (req, res) {
 });
 
 
+app.get('/:articleName',function(req,res)
+{
+    var articleName=req.params.articleName;
+    
+    res.send(createTemplate(articles[articleName]));
+});
 
 app.get('/articles/:articleName',function(req,res)
 {
