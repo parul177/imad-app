@@ -89,6 +89,7 @@ var htmlTemplate=
            <div>
            
            ${date.toDateString()}
+           <hr/>
         </div>
     </div>
     <div>
