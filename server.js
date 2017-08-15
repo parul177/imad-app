@@ -121,9 +121,9 @@ res.status(500).send(err.toString());
   });
 });
 
-app.get('/articleone', function (req, res) {
- res.send(createTemplate(articleone));
-});
+//app.get('/articleone', function (req, res) {
+ //res.send(createTemplate(articleone));
+//});
 
 app.get('/articletwo', function (req, res) {
   res.send(createTemplate(articletwo));
