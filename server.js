@@ -141,7 +141,7 @@ app.get('/:articleName',function(req,res)
     res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/articles/:articleName',function(req,res)
+app.get('/articletable/:articleName',function(req,res)
 {
     var name=req.params.articleName;
    //pool.query("SELECT * FROM articles WHERE title='"+req.params.articleName+ "'",function(err,result)
