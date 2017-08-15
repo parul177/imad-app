@@ -146,7 +146,7 @@ app.get('/articletable/:articleName',function(req,res)
     var name=req.params.articleName;
    //pool.query("SELECT * FROM articletable WHERE title='"+req.params.articleName+ "'",function(err,result)
  //   pool.query("SELECT * FROM articletable where title= '"+name+"'",function(err,result)
-   pool.query("SELECT * FROM article_editor where article_id= '"+name+"'",function(err,result)
+   pool.query("SELECT * FROM user where id= '"+name+"'",function(err,result)
    {
       if(err)
       {
