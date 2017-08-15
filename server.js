@@ -116,15 +116,15 @@ res.status(500).send(err.toString());
   });
 });
 
-app.get('/article-1', function (req, res) {
+app.get('/articleone', function (req, res) {
  res.send(createTemplate(articleone));
 });
 
-app.get('/article-2', function (req, res) {
+app.get('/articletwo', function (req, res) {
   res.send(createTemplate(articletwo));
 });
 
-app.get('/article-3', function (req, res) {
+app.get('/articlethree', function (req, res) {
   res.send(createTemplate(articlethree));
 });
 
