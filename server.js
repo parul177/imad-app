@@ -11,7 +11,7 @@ var config=
   
 host:'http://db.imad.hasura-app.io',
   
-port:'54321',
+port:'5432',
   
 password:process.env.DB_PASSWORD
 
