@@ -22,7 +22,7 @@ button.onclick=function()
     request.send(null);
 };
 
-var submit=document.getElementById('submit_btn');
+/*var submit=document.getElementById('submit_btn');
 submit.onclick=function()
 {
     
@@ -53,5 +53,37 @@ submit.onclick=function()
 var name=nameInput.value;
      request.open('GET','http://pscancer177.imad.hasura-app.io/submitname?name=' +name,true);
     request.send(null);
-};
+};*/
 
+var submit=document.getElementById('submit_button');
+submit.onclick=function()
+{
+    
+     var request=new XMLHttpRequest();
+    //capture the response & store it in a variable
+    request.onreadystatechange=function(){
+    if(request.readyState===XMLHttpRequest.DONE)
+    {
+        //take action
+        if(request.status===200)
+        {
+            alert('logged in successfully'); 
+        }
+        else if(request.status===403)
+        {
+            alert('username/password is invalid');
+        }
+        
+        else if(request.status===500)
+        {
+            alert('something went wrong on server');
+        }
+        }
+        }};
+    var username=document.getElementById('username').value;
+var password=document.getElementById('password').value;
+
+     request.open('POST','http://pscancer177.imad.hasura-app.io/login',true);
+     request.setRequestHeader('Content-Type','application/json');
+    request.send(JSON.stringify({username:username,password:password}));
+};
